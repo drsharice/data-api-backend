@@ -8,7 +8,11 @@ app = FastAPI()
 # CORS for your React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://black-forest-0125ad50f.1.azurestaticapps.net"],  # TODO: limit in prod
+    allow_origins=[
+    "https://black-forest-0125ad50f.1.azurestaticapps.net",
+    "http://localhost:5173"
+    ]
+,  # TODO: limit in prod
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
