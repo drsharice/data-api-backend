@@ -44,8 +44,8 @@ coverage.xml
 *.py,cover
 
 # Environments
-.env
-.env.*
+#.env
+#.env.*
 
 # Logs
 *.log
